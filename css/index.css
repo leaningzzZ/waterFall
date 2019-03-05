@@ -1,0 +1,48 @@
+body,ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 220px;
+}
+
+.clearFix::after{
+    /* 清除浮动 */
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    text-align: center;
+}
+.list{
+    min-width: 1000px;
+    display: inline-block;
+}
+li{
+    float: left;
+}
+.item{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+}
+.item img{
+    width: 220px;
+    display: block;
+}
+.bottom{
+    height: 50px;
+    background: rgba(0.5, 0.5, 0.5, 0.1);
+    text-align: center;
+    /* font-size: 20px; */
+    line-height: 50px;
+    cursor: pointer;
+}
+.bottom a{
+    color: #999;
+    text-decoration: none;
+}
